@@ -1,0 +1,24 @@
+public class TestDery {
+  public static void main(String[] args) {
+		// 创建Time实例化对象
+		Time t = new Time(1994, 12, 25);
+    //输出
+		System.out.println(t.year + "年" + t.month + "月" + t.day + "日");
+	}
+}
+//创建Time类
+class Time {
+	int year;
+	int month;
+	int day;
+//手动创建Time无参构造方法
+	Time() {
+
+	}
+//重载Time有参构造方法，并初始化对象
+	Time(int year, int month, int day) {
+		this.year = year;
+		this.month = month;
+		this.day = day;
+	}
+}
